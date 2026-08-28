@@ -277,9 +277,18 @@
     text-align:right;
     white-space:nowrap;
   }
+  .qr{
+    position:absolute;
+    right:13mm;
+    bottom:26mm;
+    width:32mm;
+    height:32mm;
+  }
   @media print{
     html,body{ background:none; }
     .page{ margin:0; box-shadow:none; width:auto; min-height:auto; }
+    .footer{ position:fixed; bottom:10mm; left:13mm; right:13mm; }
+    .qr{ position:fixed; }
     @page{ size:A4; margin:0; }
   }
 </style>
@@ -426,7 +435,7 @@
   </div>
 
   <!-- QR code — en bas à droite, au-dessus du footer -->
-  <img src="qr-cube-extr-001.png" alt="QR code — fiche CUBE-EXTR-001" style="position:absolute; right:13mm; bottom:26mm; width:32mm; height:32mm;" />
+  <img src="qr-cube-extr-001.png" alt="QR code — fiche CUBE-EXTR-001" class="qr" />
 
 </div>
 
